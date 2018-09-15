@@ -6,8 +6,7 @@
     "typings": "index.d.ts",
     "nativescript": {
         "platforms": {
-            "android": "4.0.0",
-            "ios": "4.0.0"
+            "android": "4.0.0"
         }
     },
     "scripts": {
@@ -20,7 +19,7 @@
         "tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\"",
         "plugin.tscwatch": "npm run tsc -- -w",
         "demo.ios": "npm run tsc && cd ../demo && tns run ios --syncAllFiles --emulator",
-        "demo.android": "npm run tsc && cd ../demo && tns run android --syncAllFiles --emulator",
+        "demo.android": "npm run tsc && cd ../demo && tns run android --syncAllFiles",
         "demo.reset": "cd ../demo && npx rimraf -- hooks node_modules platforms package-lock.json",
         "plugin.prepare": "npm run build && cd ../demo && tns plugin remove nativescript-betterwebsockets && tns plugin add ../src",
         "clean": "npm run demo.reset && npx rimraf -- node_modules package-lock.json && npm i",
@@ -30,8 +29,7 @@
     "keywords": [
         "NativeScript",
         "JavaScript",
-        "Android",
-        "iOS"
+        "Android"
     ],
     "author": {
         "name": "Your Name",
