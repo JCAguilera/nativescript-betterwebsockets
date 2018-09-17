@@ -1,14 +1,30 @@
 {
     "name": "nativescript-betterwebsockets",
     "version": "1.0.0",
-    "description": "Your awesome NativeScript plugin.",
+    "description": "A Client and Server WebSockets NativeScript plugin for Android.",
     "main": "betterwebsockets",
     "typings": "index.d.ts",
     "nativescript": {
         "platforms": {
-            "android": "4.0.0"
+            "android": "1.5.0"
         }
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JCAguilera/nativescript-betterwebsockets.git"
+    },
+    "keywords": [
+        "NativeScript",
+        "WebSockets",
+        "Development",
+        "JavaScript",
+        "Typescript",
+        "Android",
+        "Sockets",
+        "Websocket",
+        "Client",
+        "Server"
+    ],
     "scripts": {
         "tsc": "tsc",
         "build": "npm run tsc && npm run build.native",
@@ -26,30 +42,17 @@
         "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**'",
         "prepack": "npm run build.native"
     },
-    "keywords": [
-        "NativeScript",
-        "JavaScript",
-        "Android"
-    ],
     "author": {
-        "name": "Your Name",
-        "email": "youremail@yourdomain.com"
+        "name": "JuanCarlos Aguilera",
+        "email": "jcaaguilerat@gmail.com"
     },
     "bugs": {
         "url": "https://github.com/JCAguilera/nativescript-betterwebsockets/issues"
     },
-    "license": "Apache-2.0",
+    "license": "MIT & Apache 2.0",
     "homepage": "https://github.com/JCAguilera/nativescript-betterwebsockets",
     "readmeFilename": "README.md",
     "devDependencies": {
-        "tns-core-modules": "^4.2.0",
-        "tns-platform-declarations": "^4.2.0",
-        "typescript": "~2.8.2",
-        "prompt": "^1.0.0",
-        "rimraf": "^2.6.2",
-        "tslint": "^5.11.0",
-        "semver": "^5.5.0"
-    },
-    "dependencies": {},
-    "bootstrapper": "nativescript-plugin-seed"
+        "tns-platform-declarations": "^4.2.0"
+    }
 }
