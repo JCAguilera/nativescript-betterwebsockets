@@ -25,20 +25,20 @@ let url = 'wss://echo.websocket.org';
 this.client = new WebSocketClient(url);
 // Open Event
 this.client.on('open', function(handshake){
-	console.log('Opened!');
-	this.main(); // Do everything else here
+    console.log('Opened!');
+    this.main(); // Do everything else here
 });
 // Message Event
 this.client.on('message', function(message){ 
-	console.log('New message: ' + message);
+    console.log('New message: ' + message);
 });
 // Close Event
 this.client.on('close', function(code, reason, remote){
-	console.log('Closed!');
+    console.log('Closed!');
 });
 // Error Event
 this.client.on('error', function(ex){
-	console.log('Error!');
+    console.log('Error!');
 });
 // Connect (Do after setting the events!).
 this.client.connect();
@@ -46,8 +46,8 @@ this.client.connect();
 ```javascript
 // This will be executed after the open event.
 main() {
-	this.client.send('Hey!');
-	this.client.close(); // Close the client :(
+    this.client.send('Hey!');
+    this.client.close(); // Close the client :(
 }
 ```
 **WebSocketServer:**
@@ -56,24 +56,24 @@ let port = 3000;
 this.server  =  new  WebSocketServer(port);
 // Start Event (Server Started successfully)
 this.server.on('start', () => {
-	console.log('Server listening on *:'  +  port);
+    console.log('Server listening on *:'  +  port);
 });
 // Open Event (Someone connects)
 this.server.on('open', (conn, handshake) => {
-	console.log('New Conenction!');
-	conn.send('You are connected!'); // Send message to socket
+    console.log('New Conenction!');
+    conn.send('You are connected!'); // Send message to socket
 });
 // Message Event
 this.server.on('message', (conn, message) => {
-	console.log('New message: ' + message);
+    console.log('New message: ' + message);
 });
 // Close event
 this.server.on('close', (conn, code, reason, remote) => {
-	console.log('Someone left!');
+    console.log('Someone left!');
 });
 // Error event
 this.server.on('error', (conn, ex) => {
-	console.log('Error!');
+    console.log('Error!');
 });
 // Starts the server
 this.server.start();
