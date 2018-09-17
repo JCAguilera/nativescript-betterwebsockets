@@ -46,6 +46,7 @@ this.client.connect();
 ```javascript
 // This will be executed after the open event.
 main() {
+    // To prevent crashes, send messages after the socket is opened.
     this.client.send('Hey!');
     this.client.close(); // Close the client :(
 }
