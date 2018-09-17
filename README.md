@@ -3,7 +3,7 @@
 
 [Java WebSockets](https://github.com/TooTallNate/Java-WebSocket) Library implementation for Nativescript. Allows you to create a WebSocket Client and Server on Android.
 
-[![PayPal Donation](https://img.shields.io/badge/Donate-PayPal-brightgreen.svg)](https://www.paypal.me/JCAguilera) [![Bitcoin Donation](https://img.shields.io/badge/Donate-Bitcoin-orange.svg)](https://juankyapps.com/donate)
+[![PayPal Donation](https://img.shields.io/badge/Donate-PayPal-brightgreen.svg)](https://www.paypal.me/JCAguilera) [![Bitcoin Donation](https://img.shields.io/badge/Donate-Bitcoin-orange.svg)](https://juankyapps.com/donate) [![Other Donation Methods](https://img.shields.io/badge/Donate-Others-blue.svg)](https://juankyapps.com/donate)
 
 ## Requirements
   
