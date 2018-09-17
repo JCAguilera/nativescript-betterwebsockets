@@ -51,6 +51,7 @@ main() {
 }
 ```
 Other WebSocketClient methods are avaliable [here](https://static.javadoc.io/org.java-websocket/Java-WebSocket/1.3.9/org/java_websocket/client/WebSocketClient.html).
+
 **WebSocketServer:**
 ```javascript
 let port = 3000;
