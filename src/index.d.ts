@@ -1,5 +1,5 @@
-declare var org: any;
-export declare class WebSocketClient extends org.java_websocket.client.WebSocketClient {
+declare const WebSocketClient_base: new (uri: any) => any;
+export declare class WebSocketClient extends WebSocketClient_base {
     private _events;
     constructor(serverURI: string);
     onOpen(handshakedata: any): void;
@@ -8,7 +8,8 @@ export declare class WebSocketClient extends org.java_websocket.client.WebSocket
     onError(ex: any): void;
     on(event: string, callback: Function): void;
 }
-export declare class WebSocketServer extends org.java_websocket.server.WebSocketServer {
+declare const WebSocketServer_base: new (port: any) => any;
+export declare class WebSocketServer extends WebSocketServer_base {
     private _events;
     constructor(port: number);
     onOpen(conn: any, handshake: any): void;
