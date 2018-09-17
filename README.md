@@ -50,6 +50,7 @@ main() {
     this.client.close(); // Close the client :(
 }
 ```
+Other WebSocketClient methods are avaliable [here](https://static.javadoc.io/org.java-websocket/Java-WebSocket/1.3.9/org/java_websocket/client/WebSocketClient.html).
 **WebSocketServer:**
 ```javascript
 let port = 3000;
@@ -78,6 +79,7 @@ this.server.on('error', (conn, ex) => {
 // Starts the server
 this.server.start();
 ```
+Other WebSocketServer methods are avaliable [here](https://static.javadoc.io/org.java-websocket/Java-WebSocket/1.3.9/org/java_websocket/server/WebSocketServer.html).
 ## License
 
 MIT License - see [LICENSE](LICENSE) for more details.
