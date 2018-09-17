@@ -11,7 +11,6 @@ This plugin works on Android only!
 
 ## Installation
 
-To install this plugin:
 ```javascript
 tns plugin add nativescript-betterwebsockets
 ```
