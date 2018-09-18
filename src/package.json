@@ -1,6 +1,6 @@
 {
     "name": "nativescript-betterwebsockets",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A Client and Server WebSockets plugin for Nativescript on Android.",
     "main": "betterwebsockets",
     "typings": "index.d.ts",
@@ -53,7 +53,5 @@
     "devDependencies": {
         "tns-platform-declarations": "^4.2.0"
     },
-    "dependencies": {
-        "semver": "^5.5.1"
-    }
+    "dependencies": {}
 }

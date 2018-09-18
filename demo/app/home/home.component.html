@@ -1,0 +1,31 @@
+<ActionBar title="Nativescript BetterWebsockets Demo" class="action-bar">
+</ActionBar>
+
+<GridLayout>
+	<ScrollView class="page" *ngIf="!running">
+		<StackLayout class="home-panel">
+			<Button text="Connect Client" (tap)="clientSelected()" *ngIf="!connectClientSelected"></Button>
+			<TextField [(ngModel)]="address" hint="ws://ipAdress:port" *ngIf="connectClientSelected"></TextField>
+			<Button text="Connect" (tap)="start('client')" *ngIf="connectClientSelected"></Button>
+			<Button text="Cancel" (tap)="cancelClient()" *ngIf="connectClientSelected"></Button>
+			<Button text="Start Server" (tap)="start('server')" *ngIf="!connectClientSelected"></Button>
+		</StackLayout>
+	</ScrollView>
+	<GridLayout *ngIf="running" rows="auto, *, auto" columns="*">
+		<StackLayout row="0" col="0" colSpan="2">
+			<Button text="{{ whatsRunning === 'client' ? 'Disconnect' : 'Stop Server' }}" (tap)="stop()"></Button>
+		</StackLayout>
+		<ListView class="list-group" [items]="messages" row="1" col="0">
+			<ng-template let-item="item">
+				<StackLayout flexDirection="row" class="list-group-item">
+					<Label [text]="item.address" style="font-weight: bold"></Label>
+					<Label [text]="item.message"></Label>
+				</StackLayout>
+			</ng-template>
+		</ListView>
+		<GridLayout row="2" col="0" rows="*" columns="*, auto">
+			<TextField row="0" col="0" [(ngModel)]="message" hint="Enter text..."></TextField>
+			<Button row="0" col="1" text="Send" (tap)="send()"></Button>
+		</GridLayout>
+	</GridLayout>
+</GridLayout>
